@@ -42,3 +42,13 @@ python_description = [
 ]
 
 list_example = [1, "+", 2, "="]
+
+# 변할 수 있는 데이터는 key값으로 사용 불가능
+dict_example = {
+    1: 'vallue 1',
+    'a' : 'value a',
+    # x: 'asdf'       # 변수는 사용 불가능
+    # [1,2] : 'asdf'  #리스트도 사용 불가능
+}
+
+print(dict_example)
