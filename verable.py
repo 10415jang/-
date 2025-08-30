@@ -58,6 +58,24 @@ print(len(x)-1)
 x = {'a' : 100, 'b' :200} #dictionary key : value
 print(x)
 print(x['a'])
+print(type(x))
+
+print("dictionary 예제 =========")
+x['c'] = 10
+print(x)
+print(x['c'])
+#print(x['d]) # keyError:'d'
+
+del x['a']
+print(x)
+
+print(x.keys())
+print(x.values())
+print(x.itemas())
+
+print(x.clear())# 딕셔너리 지우기
+
+#정오펴
 example = {
     'python': [True, False, True, True, True, True, True, False, False, True],
     'java': [True, False, False, True, True, True, False, False, False, True],
