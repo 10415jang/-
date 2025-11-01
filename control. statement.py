@@ -9,3 +9,16 @@ else:
          print("재시험 응시가 필요합니다.")
     else:
          print("불합격입니다")
+
+
+# while True:
+#         user_input = input("같은 값을 입력하세요 :")
+#
+#         if user_input.lower() == "z":
+#             break
+input_number = int(input("숫자를 입력하세요"))
+index = 2
+
+while index <= input_number:
+    print(index)
+    index = index + 2
