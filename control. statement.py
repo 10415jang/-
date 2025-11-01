@@ -20,5 +20,6 @@ input_number = int(input("숫자를 입력하세요"))
 index = 2
 
 while index <= input_number:
-    print(index)
+    if index % 2 == 0:
+      print(index)
     index = index + 2
