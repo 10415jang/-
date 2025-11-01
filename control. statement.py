@@ -12,14 +12,17 @@ else:
 
 
 # while True:
-#         user_input = input("같은 값을 입력하세요 :")
+#         user_input = (input("같은 값을 입력하세요 :"))
 #
 #         if user_input.lower() == "z":
 #             break
 input_number = int(input("숫자를 입력하세요"))
 index = 2
-
 while index <= input_number:
     if index % 2 == 0:
       print(index)
     index = index + 2
+
+#피보나치 수열
+input_number = int(input("숫자를 입력하세요"))
+index = 1
