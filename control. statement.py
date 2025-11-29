@@ -133,10 +133,24 @@ for student in test:
         'science': [1, 3, 2, 4, 5, 3, 1, 2, 3, 4],
     }
     for student in test:
-        if student['name']== 'ccc': #배열 반복에서 스킵하는 방법
+        if student['name']== 'ccc': #배열 반복해서 스킵하는 방법
             continue
 
         print("학생", student['name'],"===========")
+
+        # 답안의 key 기준으로 반복하는 방법
+        for key in correct_answer.keys():
+            score = get_score(student[key], correct_answer[key])
+            print(key, ": ", score)
+
+        # student key 기준으로 반복하는 방법
+        # for key in student.keys():
+        #     if key == 'name' or key == 'number':
+        #         continue
+        #     score = get_score(student[key], correct_answer[key])
+        #     print(key, ": ",score)
+
+        #각각 써주는 방법
         math_score = get_score(student['math'], correct_answer['math'])
         korean_score = get_score(student['korean'], correct_answer['korean'])
         english_score = get_score(student['english'], correct_answer['english'])
