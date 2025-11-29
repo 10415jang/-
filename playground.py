@@ -15,7 +15,7 @@ import random
 import time
 
 def updown():
-    # random.randrange ( n, m )   n <= result < m
+    result = random.randrange(1, 101)
     print("WELCOME TO UP DOWN")
     while True:
         user_input= int(input("값을 입력하세요:"))
@@ -27,7 +27,7 @@ def updown():
                 print("up")
             else:
                 print("down")
-
+updown()
 
 
 
