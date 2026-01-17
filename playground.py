@@ -30,6 +30,8 @@ def updown():
 updown()
 
 
+def shuffle_seat():
+
 
 
 
